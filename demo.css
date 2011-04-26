@@ -1,0 +1,58 @@
+ul {
+    font-family: sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.listify {
+    border: 1px solid #333;
+    margin-bottom: 24px;
+    overflow: hidden;
+    padding: 2px 2px 0 2px;
+    width: 460px;
+    -moz-border-radius: 16px;
+}
+
+.listify li {
+    background-color: #333;
+    color: #fff;
+    float: left;
+    margin-bottom: 2px;
+    margin-right: 4px;
+    padding: 2px 2px 2px 8px;
+    -moz-border-radius: 16px;
+}
+
+.listify li.delete {
+    opacity: .5;
+}
+
+.listify li a {
+    background-color: #fff;
+    color: #c00;
+    float: right;
+    font-weight: bold;
+    margin-left: 8px;
+    text-align: center;
+    text-decoration: none;
+    width: 20px;
+    -moz-border-radius: 16px;
+}
+
+.listify li a:hover {
+    background-color: #c00;
+    color: #fff;
+}
+
+.listify li.input {
+    background-color: transparent;
+}
+
+.listify input {
+    border: none;
+    display: block;
+    margin: 0;
+    padding: 1px 0;
+}
+

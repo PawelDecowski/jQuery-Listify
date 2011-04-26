@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <title>jListify demo</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="jquery.listify.js"></script>
+</head>
+<body>
+    <input id="my-list">
+    <input id="my-list-with-suggestions">
+
+    <a id="css-switcher" href="#">Toggle CSS</a>
+
+    <script>
+        $(document).ready(function()
+        {
+            $("#my-list").listify();
+            $("#my-list-with-suggestions").listify(["Alabama", "Birmingham", "Dakota", "Georgia", "Illinois", "New Jersey"]);
+
+            $("#css-switcher").click(function(e)
+            {
+                e.preventDefault();
+
+                if ($("head link").length) {
+                    $("head link").remove();
+                } else {
+                    $("head").append('<link rel="stylesheet" href="demo.css">');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
