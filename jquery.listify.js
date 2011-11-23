@@ -114,7 +114,7 @@
 
                     var items = $(this).closest(".listify").prev("input").val().split(",");
 
-                    items = items.map(String.toLowerCase);
+                    items = items.map(function(str){ return str.toLowerCase(); });
 
                     if (items.indexOf(s.toLowerCase()) > -1) {
                         continue;
